@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+header .but{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px;
+    cursor: pointer;
+}
+header .b:hover{
+    color: orange;
+}
+header .b{
+    width: 35px;
+    height: 2px;
+    margin: 2px;
+}
+.box{
+    box-shadow: 5px 5px 15px  rgba(0,0,0,.4), inset -5px -5px 15px rgba(255,255,255,.6);
+}
+nav ul{
+    display: block;
+    text-align: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 35px 0;
+}
+nav ul li a{
+    font-size: 1.5em;
+    transition: all .3s ease;
+    text-decoration: none;
+    color: #7d899c;
+}
+nav ul li a:hover{
+    transform: scale(1.1) rotate(-7deg);
+    letter-spacing: 5px;
+    color: #fff;
+}
+.container .image{
+    box-shadow: inset  0 0 10px rgba(0,0,0,.3), inset 0 0 20px rgba(255,255,255,.6), inset 0 0 30px rgba(255,255,255,.6);
+    cursor: pointer;
+}
+.container .image:hover{
+    opacity:0.8
+}
+.skill{
+    margin: 20px 50px;
+    box-shadow:  0 0 10px rgba(0,0,0,.2),  0 0 10px rgba(255,255,255,.5), 0 0 20px rgba(0,0,0,.5), inset 0 0 30px rgba(255,255,255);
+    padding: 20px 30px;
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+.skill  i{
+    font-size: 5em;
+}
+.skill  i.fa-code{
+    color: red;
+}
+.skill i.fa-css3{
+    color: blue;
+}
+.skill i.fa-js{
+    color: yellowgreen;
+}
+.skill i.fa-php{
+    color: purple;
+}
+/* @media screen and (max-width: 768px) {
+    .skill {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+} */
+.skill:hover{
+    background-color:orange;
+    transition: background 1.2s;
+}
+.des li{
+    list-style: none;
+}
+div {
+    
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+/* Animation de base pour le fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation de base pour le fade-out */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* Classe pour déclencher le fade-in */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Classe pour initialiser le fade-in */
+.fade-in.visible {
+    opacity: 1;
+}
+
+/* Classe pour déclencher le fade-out */
+.fade-out {
+    opacity: 1;
+    animation: fadeOut 1s forwards;
+}
+
+/* Classe pour initialiser le fade-out */
+.fade-out.hidden {
+    opacity: 0;
+}
+
+
